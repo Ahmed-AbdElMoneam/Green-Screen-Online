@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Green Screen Online</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js">
+  </script>
+<h1>Green Screen Online Program</h1>
+<canvas id="cv1"></canvas>
+<canvas id="cv2"></canvas>
+<p class="font">Foreground Image: 
+<input type="file" multiple="false" access="image/*" onchange="loadForegroundImage()" id="fgfile"></p>
+<p class="font">Background Image: 
+<input type="file" multiple="false" access="image/*" onchange="loadBackgroundImage()" id="bgfile"></p>
+<p>
+  <input type="button" value="Create Composite" onclick="doGreenScreen()" id="btncomp">
+  <input type="button" value="Clear Canvases" onclick="clearCanvas()" id="btnclr">
+</p>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
